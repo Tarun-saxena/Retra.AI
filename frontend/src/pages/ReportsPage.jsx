@@ -20,9 +20,9 @@ const ReportsPage = () => {
     try {
       setLoading(true);
       const [statsResponse, distributionResponse, samplesResponse] = await Promise.all([
-        axios.get('https://retra-ai.onrender.com/api/sand-samples/stats/grain-size'),
-        axios.get('https://retra-ai.onrender.com/api/sand-samples/stats/sediment-distribution'),
-        axios.get('https://retra-ai.onrender.com/api/sand-samples')
+        axios.get('https://retra-ai-w7wm.onrender.com/api/sand-samples/stats/grain-size'),
+        axios.get('https://retra-ai-w7wm.onrender.com/api/sand-samples/stats/sediment-distribution'),
+        axios.get('https://retra-ai-w7wm.onrender.com/api/sand-samples')
       ]);
       
       setStats(statsResponse.data);
