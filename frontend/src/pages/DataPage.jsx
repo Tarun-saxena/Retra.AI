@@ -33,7 +33,7 @@ const DataPage = () => {
   const fetchSamples = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('https://sandai.onrender.com/api/sand-samples');
+      const response = await axios.get('https://retra-ai.onrender.com/api/sand-samples');
       setSamples(response.data);
       setError(null);
     } catch (error) {
