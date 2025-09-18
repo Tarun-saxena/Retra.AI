@@ -15,7 +15,7 @@ const categorizeSediment = (dmed) => {
   } else if (dmed < 0.63) {
     return "Medium Sand";
   } else if (dmed < 2.0) {
-    return "Very Coarse Sand";
+    return "Coarse Sand";
   } else {
     return "Gravel";
   }
